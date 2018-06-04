@@ -1,12 +1,11 @@
 
 
-var x = 100
+const x = 100;
 
 function callme() {
-    return x
+  return x;
 }
 
 
-callme()
-
+callme();
 
