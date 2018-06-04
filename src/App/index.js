@@ -1,12 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-
-const App = (props) => {
-    return (
-        <h1>React App</h1>
-    )
-}
-
+const App = props => <h1>React App</h1>;
 
 export default App;
-

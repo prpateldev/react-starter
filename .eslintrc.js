@@ -1,7 +1,8 @@
 module.exports = {
     "parser": "babel-eslint",
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "env": {
         "browser": true,
@@ -9,12 +10,15 @@ module.exports = {
     },
     "extends": [ 
         // "airbnb-base" 
-        "airbnb"
+        "airbnb",
+        "prettier",
+        "plugin:prettier/recommended"
     ],
     "rules":{
         "comma-dangle": ["error", "never"],
         "indent": ["error", 2],
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "prettier/prettier": "error"
     },
     "parserOptions": {
         "ecmaVersion": 6,
