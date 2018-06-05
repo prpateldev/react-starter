@@ -1,8 +1,9 @@
 const x = 100;
-const msg = 'Hello';
+const msg = "Hello";
 
-function callme() {
+function callme(msgToShow = "Welcome") {
+  console.log(msgToShow);
   return x;
 }
 
-callme();
+callme(msg);
